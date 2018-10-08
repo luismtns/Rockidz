@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <title>ROCKIDZ</title>
+    
+        <!-- Estilos -->
+        <link href="lib/fa/css/fontawesome-all.css" rel="stylesheet">
+        <link rel="stylesheet" href="lib/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+            <!-- Javascript -->
+            <script src="lib/jquery.js"></script> 
+            <script src="js/main.js"></script> 
+    
+    </head>
+
+<body>
+    <div id="preloader"></div>
+    <div class="nav hidden-sm hidden-xs"></div> 
+    <div class="nav-sm hidden-lg"></div>  
+
+    <div class="container-large">
+        <div class="row jogo">
+            <div class="col-12">
+
+                <h1 class="hidden">ROQUIZZ</h1>
+                <div class="row">
+
+                    <div class="col-5 hidden-xs">
+                        <div class="row playlists">
+                            <div class="col-6 col-sm-6 no-padding">
+                                <img src="img/p2.png" alt="">
+                            </div>
+                            <div class="col-6 col-sm-6 no-padding">
+                                <img src="img/balao-jogo.png" alt="">
+                                <div class="musicas">
+                                    <h3>Playlist</h3>
+                                    <a href="https://www.youtube.com/channel/UCC9RcGqBuI771qZ4bQ3c3jw" target="_blank"><i class="fab fa-youtube"></i> Youtube</a>
+                                    <a href="https://open.spotify.com/user/2pf2xe7sw93xqubxugg33d0my/playlist/62Cz8nV6CESSBSI3wERuZR" target="_blank"><i class="fab fa-spotify"></i> Spotify</a>
+                                    <h3>Karaokê</h3>
+                                    <a href="" target="_blank"><i class="fab fa-youtube"></i> Youtube</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-7">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5>Você sabe de quem é essa música? <br><span>Dá um play!</span></h5>
+                            </div>
+                            <div class="col-4 col-sm-6">
+                                <div class="box-player">
+                                    <div class="player">
+                                        <audio id="song">
+                                            <source src="" type="audio/mpeg">
+                                        </audio>
+                                        <br />
+                                        <button id="play">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                        <!-- <button id="pause" class="hidden"><i class="fas fa-pause"></i></button> -->
+                                        <button id="volume">
+                                            <i class="fas fa-volume-up"></i>
+                                        </button>
+                                        <div id="sliderctrl">
+                                            <input id="slider" type="range" value="75" min="0" max="100">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-2 col-sm-6">
+                                <div id="time">
+                                    <h3 id="stopwatch">:00</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="imagens">
+                            <div class="row">
+                                <div class="col-3 col-sm-6">
+                                    <img class="hidden" id="image1" src="" alt="Opção 1">
+                                    <p id="banda1" class="hidden"></p>
+                                </div>
+                                <div class="col-3 col-sm-6">
+                                    <img class="hidden" id="image2" src="" alt="Opção 2">
+                                    <p id="banda2" class="hidden"></p>
+                                </div>
+                                <div class="col-3 col-sm-6">
+                                    <img class="hidden" id="image3" src="" alt="Opção 3">
+                                    <p id="banda3" class="hidden"></p>
+                                </div>
+                                <div class="col-3 col-sm-6">
+                                    <img class="hidden" id="image4" src="" alt="Opção 4">
+                                    <p id="banda4" class="hidden"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row margin-top-20">
+                            <div class="col-6">
+                                <h2>Seus Pontos:
+                                    <span id="pontos">0</span>
+                                </h2>
+                            </div>
+                            <div class="col-6">
+                                <h2>
+                                    <span id="rodada">0</span>/20
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 hidden-lg hidden-sm">
+                        <div class="row margin-top-80">
+                            <div class="col-6 col-sm-6 no-padding">
+                                <img src="img/p2.png" alt="">
+                            </div>
+                            <div class="col-6 col-sm-6 no-padding">
+                                <img src="img/balao-jogo.png" alt="">
+                                <div class="musicas">
+                                    <h3>Playlist</h3>
+                                    <a href="https://www.youtube.com/channel/UCC9RcGqBuI771qZ4bQ3c3jw" target="_blank"><i class="fab fa-youtube"></i> Youtube</a>
+                                    <a href="https://open.spotify.com/user/2pf2xe7sw93xqubxugg33d0my/playlist/62Cz8nV6CESSBSI3wERuZR" target="_blank"><i class="fab fa-spotify"></i> Spotify</a>
+                                    <h3>Karaokê</h3>
+                                    <a href="" target="_blank"><i class="fab fa-youtube"></i> Youtube</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="rank">
+                    <h3>Top 10!</h3>
+                    <p>Rank dos jogadores que tiveram a melhor pontuação</p>
+                    <table class="tabela">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Pontos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="Nome"></td>
+                                <td class="Pontos"></td>
+                            </tr>
+                            <tr>
+                                <td class="Nome"></td>
+                                <td class="Pontos"></td>
+                            </tr>
+                            <tr>
+                                <td class="Nome"></td>
+                                <td class="Pontos"></td>
+                            </tr>
+                            <tr>
+                                <td class="Nome"></td>
+                                <td class="Pontos"></td>
+                            </tr>
+                            <tr>
+                                <td class="Nome"></td>
+                                <td class="Pontos"></td>
+                            </tr>
+                            <tr>
+                                <td class="Nome"></td>
+                                <td class="Pontos"></td>
+                            </tr>
+                            <tr>
+                                <td class="Nome"></td>
+                                <td class="Pontos"></td>
+                            </tr>
+                            <tr>
+                                <td class="Nome"></td>
+                                <td class="Pontos"></td>
+                            </tr>
+                            <tr>
+                                <td class="Nome"></td>
+                                <td class="Pontos"></td>
+                            </tr>
+                            <tr>
+                                <td class="Nome"></td>
+                                <td class="Pontos"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden">
+        <audio id="feedbackPlayer">
+            <source src="" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="footer">
+    </div>
+
+    <!-- JQUERY -->
+    <script src="lib/jquery.js"></script>
+    <script src="js/main.js"></script> 
+    <script src="js/nav.js"></script>
+    <script src="js/jogo.js"></script>
+
+    <script src="js/loader.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave.eot');
+    src: url('Mohave.eot?#iefix') format('embedded-opentype'),
+        url('Mohave.woff2') format('woff2'),
+        url('Mohave.woff') format('woff'),
+        url('Mohave.ttf') format('truetype'),
+        url('Mohave.svg#Mohave') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave-Bold.eot');
+    src: url('Mohave-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Mohave-Bold.woff2') format('woff2'),
+        url('Mohave-Bold.woff') format('woff'),
+        url('Mohave-Bold.ttf') format('truetype'),
+        url('Mohave-Bold.svg#Mohave-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
